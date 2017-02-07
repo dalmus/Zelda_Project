@@ -3,7 +3,7 @@
 body{
   background-image:url(../img/back.jpg);
   background-size:contain;
-  
+
 
 }
 
@@ -58,6 +58,7 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   box-shadow: 15px 15px 15px 5px black;
   float: left;
   margin-left: 8%;
+  background-image: url('../img/background1.png');
 }
 .box1{
   width: 700px;
