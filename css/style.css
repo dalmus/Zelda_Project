@@ -1,0 +1,87 @@
+
+
+body{
+  background-image:url(../img/back.jpg);
+  background-size:contain;
+  
+
+}
+
+#body{
+  background-image: url(..//img/title.image.jpg);
+  background-size: cover;
+
+}
+.invisible_box{
+  width: 2px;
+  height: 700px;
+}
+
+.loader {
+position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 9999;
+background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
+}
+
+.title{
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url(../img/title.png);
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+.box_gems{
+  width: 200px;
+  height: 600px;
+  border: 5px solid rgba(42, 116, 37, 1);
+  border-radius: 10px;
+  border-style: groove;
+  box-shadow: 15px 15px 15px 5px black;
+  margin-left: 2%;
+  float: left;
+}
+
+.super_box{
+  width: 716px;
+  height: 600px;
+  border: 5px solid rgba(42, 116, 37, 1);
+  border-radius: 10px;
+  border-style: groove;
+  box-shadow: 15px 15px 15px 5px black;
+  float: left;
+  margin-left: 8%;
+}
+.box1{
+  width: 700px;
+  height: 2px;
+  margin-left: 1.5%;
+
+}
+
+
+.rupee_box{
+    width: 170px;
+    height: 146px;
+    border: solid 2px rgba(42, 116, 37, 1);;
+    float: left;
+}
+
+.box_score{
+  width: 200px;
+  height: 200px;
+  border: 5px solid rgba(42, 116, 37, 1);
+  border-radius: 10px;
+  border-style: groove;
+  box-shadow: 15px 15px 15px 5px black;
+  float: left;
+  margin-left: 5%;
+
+}
