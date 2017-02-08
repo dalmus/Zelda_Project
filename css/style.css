@@ -2,7 +2,7 @@
 
 body{
   background-image:url(../img/back.jpg);
-  background-size:contain;
+  background-size:contain;;
 
 
 }
@@ -47,6 +47,7 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   box-shadow: 15px 15px 15px 5px black;
   margin-left: 2%;
   float: left;
+  background-image: url('../img/background1.png');
 }
 
 .super_box{
@@ -73,6 +74,7 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
     height: 146px;
     border: solid 2px rgba(42, 116, 37, 1);;
     float: left;
+    background-size: cover;
 }
 
 .box_score{
@@ -84,5 +86,6 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   box-shadow: 15px 15px 15px 5px black;
   float: left;
   margin-left: 5%;
+  background-image: url('../img/background1.png');
 
 }
