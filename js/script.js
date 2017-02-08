@@ -5,7 +5,17 @@ $(document).ready(function() {
 });
 //
 
-      var imgCount = 3;
+
+
+$( ".rupee_box" ).each(function( index ) {
+  $(this).on("click", function(){
+    console.log( index + ": " + $( this ).text() );
+  });
+});
+
+
+
+      var imgCount = 4;
        var images = new Array
            images[0] = "img/green.png",
            images[1] = "img/blue.png",
@@ -18,7 +28,20 @@ for (var i = 0; i < 17; i++) {
 }
 
 
-//----------
+get the background image
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
