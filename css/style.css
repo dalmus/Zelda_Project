@@ -69,12 +69,17 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
 }
 
 
-.rupee_box{
+.card{
     width: 170px;
     height: 146px;
     border: solid 2px rgba(42, 116, 37, 1);;
     float: left;
     background-size: cover;
+    background-image: url('../img/card.gif');
+}
+
+.card:hover {
+  background-color: rgba(17, 90, 28, 0.8);
 }
 
 .box_score{
@@ -88,4 +93,42 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   margin-left: 5%;
   background-image: url('../img/background1.png');
 
+}
+
+.green{
+  background-image: url('../img/green.png');
+}
+
+.blue{
+  background-image: url('../img/blue.png');
+}
+
+.purple{
+  background-image: url('../img/purple.png');
+}
+
+.red{
+  background-image: url('../img/red.png');
+}
+
+.silver{
+  background-image: url('../img/silver.png');
+}
+
+.yellow{
+  background-image: url('../img/yellow.png');
+}
+
+.orange{
+  background-image: url('../img/orange.png');
+}
+
+.sky{
+  background-image: url('../img/sky.png');
+}
+
+h1{
+  font-size: 100px;
+  font-family: fantasy;
+  margin: auto;
 }
