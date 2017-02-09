@@ -67,7 +67,7 @@ $(document).ready(function() {
     },
     checkWin: function() {
       if ($('.unmatched').length === 0) {
-        $('.super_box').html('<h1>You won Link</h1>');
+        $('.super_box').html('<h1>You did it Link!</h1>');
       }
     }
   };

@@ -60,6 +60,9 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   float: left;
   margin-left: 8%;
   background-image: url('../img/background1.png');
+  font-size: 80px;
+  font-family: fantasy;
+  text-align: center;
 }
 .box1{
   width: 700px;
@@ -127,8 +130,8 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   background-image: url('../img/sky.png');
 }
 
-h1{
+/*h1{
   font-size: 100px;
   font-family: fantasy;
   margin: auto;
-}
+}*/
