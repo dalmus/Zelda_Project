@@ -3,13 +3,8 @@
 body{
   background-image:url(../img/back.jpg);
   background-size:contain;;
-
-
+  cursor: url('../img/cursor.png'), pointer;
 }
-
-#body{
-  background-image: url(..//img/title.image.jpg);
-  background-size: cover;
 
 }
 .invisible_box{
@@ -48,6 +43,9 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   margin-left: 2%;
   float: left;
   background-image: url('../img/background1.png');
+  font-family: fantasy;
+  font-size: 40px;
+  color: rgba(136, 86, 43, 1);
 }
 
 .super_box{
@@ -94,7 +92,9 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   float: left;
   margin-left: 5%;
   background-image: url('../img/background1.png');
-
+  font-family: fantasy;
+  font-size: 30px;
+  color: rgba(136, 86, 43, 1);
 }
 
 .green{
@@ -149,9 +149,19 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   background-color: rgba(138, 138, 138, .8)
 }
 
-
-.uno{
-}
-
-.dos{
+.reset{
+  border: 0;
+  background: rgba(237, 141, 38, 1);
+  color: white;
+  width: 100px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 100;
+  right: 0;
+  top: 90%;
+  left: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: fantasy;
+  border-radius: 10px;
 }

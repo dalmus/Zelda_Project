@@ -39,88 +39,48 @@ for (var i = 0; i < shuffleImages.length; i++) {
 
 //--switch function where it lets 2 divs change place by clicking the to of them--//
 
-// var swap = []
-//
-// $('.rupeeBox').click(function() {
-//   console.log('this ->', $(this));
-//   var row = $(this).attr('row')
-//   var col = $(this).attr('col')
-//   swap.push({
-//     rupeeBox: $(this),
-//     row: row,
-//     col: col
-//   })
-//   if(swap.length === 2){
-//     if(swap[0].row === swap[1].row && Math.abs(swap[0].col - swap[1].col) == 1){
-//       swap[0].toggleClass('uno dos')
-//       swap[1].toggleClass('uno dos')
-//     }
-//   }
-// });
-
 var swap = []
 
 $('.rupeeBox').click(function() {
   console.log('this ->', $(this));
-  var row = $(this).attr('row')
   var col = $(this).attr('col')
   swap.push({
     rupeeBox: $(this),
-    row: row,
     col: col
   })
   if(swap.length === 2){
-    if(swap[0].row === swap[1].row && Math.abs(swap[0].col - swap[1].col) == 1){
+    var diff = Math.abs(swap[0].col - swap[1].col)
+    if(diff == 1 || diff == 4){
       var firstClass = swap[0].rupeeBox.attr('class').split(' ')[1]
       var secondClass = swap[1].rupeeBox.attr('class').split(' ')[1]
       swap[0].rupeeBox.toggleClass(`${firstClass} ${secondClass}`)
       swap[1].rupeeBox.toggleClass(`${firstClass} ${secondClass}`)
       swap = []
     }
-  } 
+  }
 });
 
+//--Reset Button--//
 
+document.getElementById('reset').addEventListener('click', function(){
+  function shuffleImages(images){
+    var counter = images.length, temp, index;
+    while(counter > 0){
+      index = Math.floor(Math.random() * counter);
+      counter--;
+      temp = images[counter];
+      images[counter] = images[index];
+      images[index] = temp;
+    }
+    return images;
+  }
+  var shuffleImages = shuffleImages(images)
+  console.log( shuffleImages );
+  for (var i = 0; i < shuffleImages.length; i++) {
+    $('.rupeeBox').eq(i).addClass(shuffleImages[i])
+  }
 
-
-
-// <div class="box rubyRed" row="0" col="0"></div>
-// <div class="box rubyGreen" row="0" col="0"></div>
-//
-// var toSwap = []
-// $('.box').click(function(){
-//     var row = $(this).attr('row')
-//     var col = $(this).attr('col')
-//     toSwap.push({
-//         box: $(this),
-//         row: row,
-//         col: col
-//     })
-//     if (toSwap.length === 2) {
-//         if(toSwap[0].row === toSwap[1].row && Math.abs(toSwap[0].col - toSwap[1].col) == 1) {
-//             toSwap[0].toggleClass('rubyRed rubyGreen')
-//             toSwap[1].toggleClass('rubyRed rubyGreen')
-//         }
-//     }
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 
 
