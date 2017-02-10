@@ -60,7 +60,7 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   float: left;
   margin-left: 8%;
   background-image: url('../img/background1.png');
-  font-size: 80px;
+  font-size: px;
   font-family: fantasy;
   text-align: center;
 }
@@ -72,16 +72,15 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
 }
 
 
-.card{
+.rupeeBox{
     width: 170px;
     height: 146px;
     border: solid 2px rgba(42, 116, 37, 1);;
     float: left;
     background-size: cover;
-    background-image: url('../img/card.gif');
 }
 
-.card:hover {
+.rupeeBox:hover {
   background-color: rgba(17, 90, 28, 0.8);
 }
 
@@ -130,8 +129,22 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   background-image: url('../img/sky.png');
 }
 
-/*h1{
-  font-size: 100px;
+
+.reset{
+  border: 0;
+  background: rgba(237, 141, 38, 1);
+  color: white;
+  width: 100px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 100;
+  right: 0;
+  top: 90%;
+  left: 0;
+  margin: 0 auto;
   font-family: fantasy;
-  margin: auto;
-}*/
+}
+
+.reset:hover{
+  background-color: rgba(138, 138, 138, .8)
+}
