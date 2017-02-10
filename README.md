@@ -6,8 +6,8 @@ Enjoy the game!
 
 ##Wireframe
 
-<img src="./assets/page_2.png" style="width: 70px;">
-<img src="./assets/page_1.png" style="width: 70px;">
+<img src="./assets/page_2.png" style="width: 30px;">
+<img src="./assets/page_1.png" style="width: 30px;">
 
 
 ## MVP
