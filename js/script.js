@@ -39,10 +39,10 @@ for (var i = 0; i < shuffleImages.length; i++) {
 
 //--switch function where it lets 2 divs change place by clicking the to of them--//
 
-
 var swap = []
+
 $('.rupeeBox').click(function() {
-  console.log('esto ->', $(this));
+  console.log('this ->', $(this));
   var row = $(this).attr('row')
   var col = $(this).attr('col')
   swap.push({
@@ -52,13 +52,32 @@ $('.rupeeBox').click(function() {
   })
   if(swap.length === 2){
     if(swap[0].row === swap[1].row && Math.abs(swap[0].col - swap[1].col) == 1){
-      swap[0].toggleClass('#box1')
-      swap[1].toggleClass('#box2')
+      swap[0].toggleClass('uno dos')
+      swap[1].toggleClass('uno dos')
     }
   }
 });
 
 
+// <div class="box rubyRed" row="0" col="0"></div>
+// <div class="box rubyGreen" row="0" col="0"></div>
+//
+// var toSwap = []
+// $('.box').click(function(){
+//     var row = $(this).attr('row')
+//     var col = $(this).attr('col')
+//     toSwap.push({
+//         box: $(this),
+//         row: row,
+//         col: col
+//     })
+//     if (toSwap.length === 2) {
+//         if(toSwap[0].row === toSwap[1].row && Math.abs(toSwap[0].col - toSwap[1].col) == 1) {
+//             toSwap[0].toggleClass('rubyRed rubyGreen')
+//             toSwap[1].toggleClass('rubyRed rubyGreen')
+//         }
+//     }
+// })
 
 
 
@@ -165,30 +184,6 @@ $('.rupeeBox').click(function() {
 //   };
 //   grid.init();
 // });
-
-
-
-
-
-// <div class="box rubyRed" row="0" col="0"></div>
-// <div class="box rubyGreen" row="0" col="0"></div>
-//
-// var toSwap = []
-// $('.box').click(function(){
-//     var row = $(this).attr('row')
-//     var col = $(this).attr('col')
-//     toSwap.push({
-//         box: $(this),
-//         row: row,
-//         col: col
-//     })
-//     if (toSwap.length === 2) {
-//         if(toSwap[0].row === toSwap[1].row && Math.abs(toSwap[0].col - toSwap[1].col) == 1) {
-//             toSwap[0].toggleClass('rubyRed rubyGreen')
-//             toSwap[1].toggleClass('rubyRed rubyGreen')
-//         }
-//     }
-// })
 
 
 
