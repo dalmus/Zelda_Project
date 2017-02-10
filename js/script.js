@@ -39,6 +39,25 @@ for (var i = 0; i < shuffleImages.length; i++) {
 
 //--switch function where it lets 2 divs change place by clicking the to of them--//
 
+// var swap = []
+//
+// $('.rupeeBox').click(function() {
+//   console.log('this ->', $(this));
+//   var row = $(this).attr('row')
+//   var col = $(this).attr('col')
+//   swap.push({
+//     rupeeBox: $(this),
+//     row: row,
+//     col: col
+//   })
+//   if(swap.length === 2){
+//     if(swap[0].row === swap[1].row && Math.abs(swap[0].col - swap[1].col) == 1){
+//       swap[0].toggleClass('uno dos')
+//       swap[1].toggleClass('uno dos')
+//     }
+//   }
+// });
+
 var swap = []
 
 $('.rupeeBox').click(function() {
@@ -52,11 +71,17 @@ $('.rupeeBox').click(function() {
   })
   if(swap.length === 2){
     if(swap[0].row === swap[1].row && Math.abs(swap[0].col - swap[1].col) == 1){
-      swap[0].toggleClass('uno dos')
-      swap[1].toggleClass('uno dos')
+      var firstClass = swap[0].rupeeBox.attr('class').split(' ')[1]
+      var secondClass = swap[1].rupeeBox.attr('class').split(' ')[1]
+      swap[0].rupeeBox.toggleClass(`${firstClass} ${secondClass}`)
+      swap[1].rupeeBox.toggleClass(`${firstClass} ${secondClass}`)
+      swap = []
     }
-  }
+  } 
 });
+
+
+
 
 
 // <div class="box rubyRed" row="0" col="0"></div>
