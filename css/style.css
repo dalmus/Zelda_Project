@@ -1,39 +1,34 @@
-
-
-body{
-  background-image:url(../img/back.jpg);
-  background-size:contain;;
+body {
+  background-image: url(../img/back.jpg);
+  background-size: contain;
+  ;
   cursor: url('../img/cursor.png'), pointer;
 }
 
+
 }
-.invisible_box{
+.invisible_box {
   width: 2px;
   height: 700px;
 }
-
 .loader {
-position: fixed;
-left: 0px;
-top: 0px;
-width: 100%;
-height: 100%;
-z-index: 9999;
-background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
 }
-
-.title{
+.title {
   width: 600px;
   height: 300px;
   margin: 0 auto;
   background-image: url(../img/title.png);
   background-size: cover;
   background-position: center;
-
-
 }
-
-.box_gems{
+.box_gems {
   width: 200px;
   height: 600px;
   border: 5px solid rgba(42, 116, 37, 1);
@@ -47,8 +42,7 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   font-size: 40px;
   color: rgba(136, 86, 43, 1);
 }
-
-.super_box{
+.super_box {
   width: 716px;
   height: 600px;
   border: 5px solid rgba(42, 116, 37, 1);
@@ -62,27 +56,23 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   font-family: fantasy;
   text-align: center;
 }
-.box1{
+.box1 {
   width: 700px;
   height: 2px;
   margin-left: 1.5%;
-
 }
-
-
-.rupeeBox{
-    width: 170px;
-    height: 146px;
-    border: solid 2px rgba(42, 116, 37, 1);;
-    float: left;
-    background-size: cover;
+.rupeeBox {
+  width: 170px;
+  height: 146px;
+  border: solid 2px rgba(42, 116, 37, 1);
+  ;
+  float: left;
+  background-size: cover;
 }
-
 .rupeeBox:hover {
   background-color: rgba(17, 90, 28, 0.8);
 }
-
-.box_score{
+.box_score {
   width: 200px;
   height: 200px;
   border: 5px solid rgba(42, 116, 37, 1);
@@ -96,41 +86,31 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   font-size: 30px;
   color: rgba(136, 86, 43, 1);
 }
-
-.green{
+.green {
   background-image: url('../img/green.png');
 }
-
-.blue{
+.blue {
   background-image: url('../img/blue.png');
 }
-
-.purple{
+.purple {
   background-image: url('../img/purple.png');
 }
-
-.red{
+.red {
   background-image: url('../img/red.png');
 }
-
-.silver{
+.silver {
   background-image: url('../img/silver.png');
 }
-
-.yellow{
+.yellow {
   background-image: url('../img/yellow.png');
 }
-
-.orange{
+.orange {
   background-image: url('../img/orange.png');
 }
-
-.sky{
+.sky {
   background-image: url('../img/sky.png');
 }
-
-
-.reset{
+.reset {
   border: 0;
   background: rgba(237, 141, 38, 1);
   color: white;
@@ -144,12 +124,10 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   margin: 0 auto;
   font-family: fantasy;
 }
-
-.reset:hover{
+.reset:hover {
   background-color: rgba(138, 138, 138, .8)
 }
-
-.reset{
+.reset {
   border: 0;
   background: rgba(237, 141, 38, 1);
   color: white;
@@ -165,7 +143,7 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   font-family: fantasy;
   border-radius: 10px;
 }
-
-.link{
+.link {
   background-image: url('../img/link.gif');
 }
+.unmatched {}

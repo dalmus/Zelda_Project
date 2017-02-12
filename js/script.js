@@ -52,35 +52,14 @@ $('.rupeeBox').click(function() {
   if (swap.length === 2) {
     var diff = Math.abs(swap[0].col - swap[1].col)
     if (diff == 1 || diff == 4) {
-      var firstClass = swap[0].rupeeBox.attr('class').split(' ')[1]
-      var secondClass = swap[1].rupeeBox.attr('class').split(' ')[1]
+      var firstClass = swap[0].rupeeBox.attr('class').split(' ')[2]
+      var secondClass = swap[1].rupeeBox.attr('class').split(' ')[2]
       swap[0].rupeeBox.toggleClass(`${firstClass} ${secondClass}`)
       swap[1].rupeeBox.toggleClass(`${firstClass} ${secondClass}`)
       swap = []
     }
   }
 });
-//--Checking pairs with winning function--//
-
-
-
-
-    // checkWin: function() {
-    //   if ($('.unmatched').length === 0) {
-    //     $('.super_box').html('<h1>You did it Link!</h1>');
-
-function checkPair(){
-  if($('#box1').class('') === $('box2').class(''){
-    $(this).animate({
-      opacity: 1
-    }
-  }
-}
-
-
-
-
-
 
 //--Reset Button--//
 
@@ -104,3 +83,23 @@ $('.reset').click(function() {
   }
 
 });
+
+//--Checking pairs--//
+$('#check').click(function checkPair() {
+  if ($('#box1').hasClass('red') && $('#box2').hasClass('red')) {
+    $('#box1').animate({
+      opacity: 0
+    }).removeClass('unmatched');
+  }
+  $('#box2').animate({
+    opacity: 0
+  }).removeClass('unmatched');
+});
+
+
+//--Chekc winning function//The idea is that each div has a class called unmatched, sow every time there is a match the unmatched class will be removed from the div sow in the end it will check and if there is not more unmatched classes it will displey the Win Messege
+function checkWing() {
+  if ($('.unmatched').length === 0) {
+    $('.super_box').html('<h1>You did it Link!</h1>');
+  }
+}
