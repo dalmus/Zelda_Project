@@ -165,3 +165,7 @@ background: url('../img/zelda_intro.gif') 50% 50% no-repeat #000400;
   font-family: fantasy;
   border-radius: 10px;
 }
+
+.link{
+  background-image: url('../img/link.gif');
+}
