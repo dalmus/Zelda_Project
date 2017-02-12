@@ -91,9 +91,6 @@ $('#check').click(function checkPair() {
       opacity: 0
     }).removeClass('unmatched');
   }
-  $('#box2').animate({
-    opacity: 0
-  }).removeClass('unmatched');
 });
 
 
