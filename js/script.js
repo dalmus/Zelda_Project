@@ -96,14 +96,15 @@ $('#check').click(function checkPair() {
 
 //--Chekc winning function//The idea is that each div has a class called unmatched, sow every time there is a match the unmatched class will be removed from the div sow in the end it will check and if there is not more unmatched classes it will displey the Win Messege
 
-// function checkWing() {
-//   if ($('.unmatched').length === 0) {
-//     $('.super_box').html('<h1>You did it Link!</h1>');
-//   }
-// }
-
 $('#win').click(function checkWing() {
   if ($('.unmatched').length === 0) {
     $('.super_box').html('<h1>You did it Link!</h1>');
   }
 });
+
+
+// function checkWing() {
+//   if ($('.unmatched').length === 0) {
+//     $('.super_box').html('<h1>You did it Link!</h1>');
+//   }
+// }
